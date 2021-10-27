@@ -156,4 +156,4 @@ cython_debug/
 /media/
 
 db.sqlite3
-personal_portfolio/settings.py
+personal_portfolio/local_settings.py
