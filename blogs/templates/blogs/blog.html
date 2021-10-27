@@ -1,0 +1,14 @@
+{% extends 'portfolio/base.html' %}
+{% block content%}
+{% load static %}
+
+    <a href="{% url 'blogs' %}" class="btn btn-primary">Blogs</a>
+
+    <h1>Blog Details</h1>
+    <h2>{{blog.title}}</h2>
+    <p>
+        {{blog.description | safe}}
+    </p>
+    <h3>{{blog.date | date:'Y-M-d' | upper}}</h3>
+
+    {% endblock %}
